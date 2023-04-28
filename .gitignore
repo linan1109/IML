@@ -129,5 +129,4 @@ dmypy.json
 .pyre/
 task3_be9ai3nsdj.zip
 task3/dataset/
-.zip
-.pth
+*.pth
