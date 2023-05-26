@@ -714,7 +714,7 @@ if __name__ == '__main__':
         print(pipeline)
         # Due to SKLearn we have to sent this to the CPU otherwise it crashes.
         pipeline.fit(x_train, y_train)
-
+        print(regression_model.coef_.shape)
         x_test_to_tensor = torch.tensor(x_test.values, dtype=torch.float)
         y_pred = pipeline.predict(x_test_to_tensor)
 
